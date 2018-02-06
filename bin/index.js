@@ -48,6 +48,5 @@ const format = message => {
     .replace(/\*([^`]+)\*/g, chalk.yellow('$1'))
 }
 
-console.log(message)
 console.log(chalk.yellow(message.brief) + '\n')
 console.log(format(message.description))
