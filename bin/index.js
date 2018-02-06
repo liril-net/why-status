@@ -34,9 +34,9 @@ if (message === -2) {
       ? `😅 我还不知道这个状态码的中文解释，来 ${chalk.blue(
           pkg.homepage
         )} 帮我完善吧`
-      : `😅 Sorry I do not know explanation of ${chalk.yellow(
+      : `😅 Sorry I do not know explanation of code ${chalk.yellow(
           code
-        )} in ${chalk.yellow(lang)}, tell me at ${chalk.blue(pkg.homepage)}`
+        )} in language ${chalk.yellow(lang)}, tell me at ${chalk.blue(pkg.homepage)}`
   )
 
   process.exit(message)
@@ -45,7 +45,7 @@ if (message === -2) {
 const format = message => {
   return message
     .replace(/`([^`]+)`/g, chalk.blue('$1'))
-    .replace(/\*([^`]+)\*/g, chalk.yellow('$1'))
+    .replace(/\*([^*]+)\*/g, chalk.yellow('$1'))
 }
 
 console.log(chalk.yellow(message.brief) + '\n')
