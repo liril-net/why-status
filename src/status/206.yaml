@@ -18,7 +18,7 @@ en:
         differ from that sent in any previous response for the same
         variant
 
-    If the 206 response is the result of an If-Range request that used a strong cache validator, the response *SHOULD* NOT include other entity-headers. If the response is the result of an If-Range request that used a weak validator, the response *MUST NOT* include other entity-headers; this prevents inconsistencies between cached entity-bodies and updated headers. Otherwise, the response *MUST* include all of the entity-headers that would have been returned with a 200 (OK) response to the same request.
+    If the 206 response is the result of an If-Range request that used a strong cache validator, the response *SHOULD NOT* include other entity-headers. If the response is the result of an If-Range request that used a weak validator, the response *MUST NOT* include other entity-headers; this prevents inconsistencies between cached entity-bodies and updated headers. Otherwise, the response *MUST* include all of the entity-headers that would have been returned with a 200 (OK) response to the same request.
 
     A cache *MUST NOT* combine a 206 response with other previously cached content if the ETag or Last-Modified headers do not match exactly.
 
