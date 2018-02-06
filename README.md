@@ -47,7 +47,7 @@ Currently we only support language below, it will be greate if you can give me s
 ### Informational 1xx
 Request received, continuing process
 
-- [ ] 100: 'Continue'
+- [x] 100: 'Continue'
 - [x] 101: 'Switching Protocols'
 
 ### Successful 2xx

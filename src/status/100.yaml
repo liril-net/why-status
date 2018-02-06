@@ -2,3 +2,8 @@ en:
   brief: Continue
   description: |
     The client *SHOULD* continue with its request. This interim response is used to inform the client that the initial part of the request has been received and has not yet been rejected by the server. The client *SHOULD* continue by sending the remainder of the request or, if the request has already been completed, ignore this response. The server *MUST* send a final response after the request has been completed.
+
+zh:
+  brief: 继续
+  description: |
+    客户端 *应当* 继续请求。这一响应只是为了告知客户端，服务器收到了请求的初始部分，并且没有拒绝。客户端如果完成了请求，可以忽略这一响应，否则 *应当* 继续发送请求的剩余部分。服务器 *必需* 在请求完成后发送一个最终的响应。
