@@ -1,0 +1,39 @@
+{
+  "name": "why-status",
+  "version": "0.0.1",
+  "description": "🤔Tell me what is the meaning of this status?",
+  "main": "lib/why-status.js",
+  "bin": {
+    "ws": "bin/index.js",
+    "why-status": "bin/index.js"
+  },
+  "module": "src/index.js",
+  "scripts": {
+    "build": "npm run build:lib && npm run build:bin",
+    "build:lib": "webpack --config build/webpack.lib.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liril-net/why-status.git"
+  },
+  "keywords": [
+    "http",
+    "status",
+    "cli"
+  ],
+  "author": "liril <god@liril.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liril-net/why-status/issues"
+  },
+  "homepage": "https://github.com/liril-net/why-status",
+  "devDependencies": {
+    "js-yaml": "^3.10.0",
+    "ware-loader": "^0.2.4",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "os-locale": "^2.1.0"
+  }
+}

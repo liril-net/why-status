@@ -1,0 +1,13 @@
+en:
+  brief: Switching Protocols
+  description: |
+    The server understands and is willing to comply with the client's request, via the Upgrade message header field, for a change in the application protocol being used on this connection. The server will switch protocols to those defined by the response's Upgrade header field immediately after the empty line which terminates the 101 response.
+
+    The protocol SHOULD be switched only when it is advantageous to do so. For example, switching to a newer version of HTTP is advantageous over older versions, and switching to a real-time, synchronous protocol might be advantageous when delivering resources that use such features.
+
+zh:
+  brief: 协议切换
+  description: |
+    服务器根据 `Upgrade` 消息头字段理解了客户端想要更改本次连接使用的应用协议的请求，并愿意遵守这一请求。随后，在收到中断 `101` 响应的空行后，服务器会根据 `Upgrade` 消息头字段定义的值切换协议。
+
+    协议 *应当* 仅在有利的情况下切换。例如，切换到较新版本的 HTTP，或者在分发实时同步的资源时切换到一个实时同步的协议。
