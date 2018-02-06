@@ -1,6 +1,6 @@
 {
   "name": "why-status",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "🤔Tell me what is the meaning of this status?",
   "main": "lib/why-status.js",
   "bin": {
