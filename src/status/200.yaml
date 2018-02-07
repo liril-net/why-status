@@ -3,10 +3,23 @@ en:
   description: |
     The request has succeeded. The information returned with the response is dependent on the method used in the request, for example:
 
-    *GET* an entity corresponding to the requested resource is sent in the response;
+    `GET` an entity corresponding to the requested resource is sent in the response;
 
-    *HEAD* the entity-header fields corresponding to the requested resource are sent in the response without any message-body;
+    `HEAD` the entity-header fields corresponding to the requested resource are sent in the response without any message-body;
 
-    *POST* an entity describing or containing the result of the action;
+    `POST` an entity describing or containing the result of the action;
 
-    *TRACE* an entity containing the request message as received by the end server.
+    `TRACE` an entity containing the request message as received by the end server.
+
+zh:
+  brief: OK
+  description: |
+    请求成功，该响应返回的信息取决于请求使用的方法，例如：
+
+    `GET` 会在响应中发送和本次请求资源有关的实体
+
+    `HEAD` 会在响应中发送和本次请求资源有关的实体头字段，而不会携带任何信息主体
+
+    `POST` 会返回用来描述或包含本次操作结果的实体
+
+    `TRACE` 会返回包含本次服务器接收到的请求信息的实体

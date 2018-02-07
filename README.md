@@ -53,7 +53,7 @@ Request received, continuing process
 ### Successful 2xx
 The action was successfully received, understood, and accepted
 
-- [ ] 200: 'OK'
+- [x] 200: 'OK'
 - [ ] 201: 'Created'
 - [ ] 202: 'Accepted'
 - [ ] 203: 'Non-Authoritative Information'
