@@ -4,3 +4,10 @@ en:
     The request has been fulfilled and resulted in a new resource being created. The newly created resource can be referenced by the URI(s) returned in the entity of the response, with the most specific URI for the resource given by a Location header field. The response *SHOULD* include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. The origin server *MUST* create the resource before returning the 201 status code. If the action cannot be carried out immediately, the server *SHOULD* respond with 202 (Accepted) response instead.
 
     A 201 response *MAY* contain an `ETag` response header field indicating the current value of the entity tag for the requested variant just created.
+
+zh:
+  brief: 已创建
+  description: |
+    请求已经被实现并且导致一个新资源被创建。新建资源可以通过响应实体返回的 URI 访问，大多数情况下该 URI 是通过 Location 头字段返回的。响应 *应当* 包含一个有资源特征和位置的列表以供用户或者 UA 选择最合适的使用。实体格式是通过 Content-Type 头字段指定的媒体类型确定的。远程服务器 *必须* 在返回 201 状态码之前创建好相应的资源。如果这一操作没法立即完成，服务端 *应该* 返回 202 （已接受）作为代替。
+
+    201 响应头 *可能* 包含一个 `ETag` 响应头字段，用来描述刚刚创建的请求变量的当前值。
